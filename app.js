@@ -32,11 +32,11 @@ app.post('/sendmail', function (req, res) {
 
     var mailOptions = {
         from: req.body.email,
-        to:  req.body.mail_to,
+        to: req.body.mail_to,
         subject: 'African blockchain conference',
-        text:  req.body.message
+        text: req.body.message
     };
-    transporter.sendMail(mailOptions, function(error, info){
+    transporter.sendMail(mailOptions, function (error, info) {
         if (error) {
             console.log(error);
             res.json({feedback: 'failed'});
@@ -49,5 +49,9 @@ app.post('/sendmail', function (req, res) {
 
 // Listen
 var port = process.env.PORT || 4000;
-app.listen(port);
-console.log('Listening on localhost:' + port);
+// app.listen(port);
+// console.log('Listening on localhost:' + port);
+
+app.listen(port, function(){
+    console.log('listening on', port);
+})
