@@ -21,8 +21,8 @@ var transporter = nodemailer.createTransport({
 
 // Routes
 app.get('/', function (req, res) {
-    // res.send('Hello World!');
-    res.send(req.body);
+    res.send('Wrong location');
+    // res.send(req.body);
 
 });
 
