@@ -4,44 +4,609 @@
     <list default="true" id="c6f98f87-f5e9-4aa9-bdd7-e92c643befef" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/addressparser/.jshintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/addressparser/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/addressparser/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/addressparser/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/addressparser/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/addressparser/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/addressparser/src/addressparser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/autoscaling-2011-01-01.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/autoscaling-2011-01-01.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/cloudformation-2010-05-15.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/cloudformation-2010-05-15.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/cloudfront-2014-05-31.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/cloudfront-2014-05-31.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/cloudfront-2014-05-31.waiters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/cloudsearch-2011-02-01.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/cloudsearch-2011-02-01.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/cloudsearch-2013-01-01.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/cloudsearch-2013-01-01.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/cloudsearchdomain-2013-01-01.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/cloudtrail-2013-11-01.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/cloudtrail-2013-11-01.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/cognito-identity-2014-06-30.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/cognito-sync-2014-06-30.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/datapipeline-2012-10-29.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/datapipeline-2012-10-29.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/directconnect-2012-10-25.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/directconnect-2012-10-25.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/dynamodb-2011-12-05.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/dynamodb-2011-12-05.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/dynamodb-2011-12-05.waiters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/dynamodb-2012-08-10.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/dynamodb-2012-08-10.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/dynamodb-2012-08-10.waiters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/ec2-2014-06-15.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/ec2-2014-06-15.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/ec2-2014-06-15.waiters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/elasticache-2014-07-15.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/elasticache-2014-07-15.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/elasticbeanstalk-2010-12-01.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/elasticbeanstalk-2010-12-01.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/elasticloadbalancing-2012-06-01.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/elasticloadbalancing-2012-06-01.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/elasticmapreduce-2009-03-31.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/elasticmapreduce-2009-03-31.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/elastictranscoder-2012-09-25.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/elastictranscoder-2012-09-25.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/elastictranscoder-2012-09-25.waiters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/email-2010-12-01.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/email-2010-12-01.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/email-2010-12-01.waiters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/glacier-2012-06-01.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/glacier-2012-06-01.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/glacier-2012-06-01.waiters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/iam-2010-05-08.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/iam-2010-05-08.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/importexport-2010-06-01.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/importexport-2010-06-01.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/kinesis-2013-12-02.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/kinesis-2013-12-02.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/logs-2014-03-28.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/logs-2014-03-28.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/monitoring-2010-08-01.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/monitoring-2010-08-01.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/opsworks-2013-02-18.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/opsworks-2013-02-18.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/rds-2013-01-10.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/rds-2013-01-10.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/rds-2013-02-12.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/rds-2013-02-12.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/rds-2013-09-09.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/rds-2013-09-09.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/rds-2013-09-09.waiters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/redshift-2012-12-01.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/redshift-2012-12-01.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/redshift-2012-12-01.waiters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/route53-2013-04-01.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/route53-2013-04-01.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/route53domains-2014-05-15.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/s3-2006-03-01.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/s3-2006-03-01.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/s3-2006-03-01.waiters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/sdb-2009-04-15.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/sdb-2009-04-15.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/sns-2010-03-31.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/sns-2010-03-31.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/sqs-2012-11-05.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/sqs-2012-11-05.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/storagegateway-2013-06-30.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/storagegateway-2013-06-30.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/sts-2011-06-15.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/support-2013-04-15.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/support-2013-04-15.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/swf-2012-01-25.api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/apis/swf-2012-01-25.paginators.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/lib/translator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk-apis/scripts/translate-api" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/.yardopts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/.yardopts_guide" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/Gemfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/Gemfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/NOTICE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/Rakefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/UPGRADING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/configuration.sample" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/dist-tools/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/dist-tools/browser-builder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/dist-tools/strategies/cache.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/dist-tools/strategies/default.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/dist-tools/test/browser-builder.mocha.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/dist-tools/test/helpers.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/dist/BUNDLE_LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/dist/aws-sdk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/dist/aws-sdk.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/guide/browser-building.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/guide/browser-configuring-wif.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/guide/browser-configuring.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/guide/browser-examples.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/guide/browser-intro.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/guide/browser-making-requests.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/guide/browser-services.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/guide/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/guide/node-configuring.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/guide/node-examples.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/guide/node-intro.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/guide/node-making-requests.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/guide/node-services.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/api-versions/model_documentor.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/api-versions/plugin.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/api-versions/templates/default/class/html/setup.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/api-versions/templates/default/class/html/waiter_details_list.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/api-versions/templates/default/class/html/waiter_summary.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/api-versions/templates/default/docstring/html/experimental.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/api-versions/templates/default/docstring/setup.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/api-versions/templates/default/fulldoc/html/css/common.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/api-versions/templates/default/fulldoc/html/setup.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/api-versions/templates/default/layout/html/services.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/api-versions/templates/default/layout/html/setup.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/api-versions/templates/default/module/html/box_info.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/api-versions/templates/default/module/html/children.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/api-versions/templates/default/tags/setup.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/api-versions/templates/default/waiter_details/html/method_signature.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/api-versions/templates/default/waiter_details/html/setup.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/default/layout/html/footer.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/default/layout/html/layout.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/flasky_sphinx_guide/fulldoc/html/css/highlight.github.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/flasky_sphinx_guide/fulldoc/html/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/flasky_sphinx_guide/fulldoc/html/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/flasky_sphinx_guide/fulldoc/html/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/flasky_sphinx_guide/fulldoc/html/js/highlight.pack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/flasky_sphinx_guide/fulldoc/html/js/sphinx/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/flasky_sphinx_guide/fulldoc/html/js/sphinx/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/flasky_sphinx_guide/fulldoc/html/js/sphinx/doctools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/flasky_sphinx_guide/fulldoc/html/js/sphinx/file.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/flasky_sphinx_guide/fulldoc/html/js/sphinx/searchtools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/flasky_sphinx_guide/fulldoc/html/js/underscore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/flasky_sphinx_guide/fulldoc/html/search.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/flasky_sphinx_guide/fulldoc/html/search_index.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/flasky_sphinx_guide/fulldoc/html/setup.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/flasky_sphinx_guide/layout/html/layout.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/flasky_sphinx_guide/layout/html/setup.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/flasky_sphinx_guide/layout/html/sidebar.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/flasky_sphinx_guide/onefile/html/layout.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/doc-src/templates/flasky_sphinx_guide/onefile/html/setup.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/eslint-rules/no-require-in-service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/autoscaling/autoscaling.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/autoscaling/step_definitions/autoscaling.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/cloudformation/cloudformation.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/cloudformation/step_definitions/cloudformation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/cloudfront/cloudfront.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/cloudfront/step_definitions/cloudfront-latest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/cloudfront/step_definitions/cloudfront.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/cloudsearch/cloudsearch.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/cloudsearch/step_definitions/cloudsearch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/cloudtrail/cloudtrail.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/cloudtrail/step_definitions/cloudtrail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/cloudwatch/cloudwatch.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/cloudwatch/step_definitions/cloudwatch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/datapipeline/datapipeline.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/datapipeline/step_definitions/datapipeline.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/directconnect/directconnect.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/directconnect/step_definitions/directconnect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/dynamodb/crc32.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/dynamodb/step_definitions/dynamodb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/dynamodb/tables.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/ec2/ec2.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/ec2/step_definitions/ec2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/elasticache/elasticache.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/elasticache/step_definitions/elasticache.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/elasticbeanstalk/elasticbeanstalk.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/elasticbeanstalk/step_definitions/elasticbeanstalk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/elastictranscoder/elastictranscoder.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/elastictranscoder/step_definitions/elastictranscoder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/elb/elb.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/elb/step_definitions/elb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/emr/emr.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/emr/step_definitions/emr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/extra/assertions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/extra/dummy.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/extra/fixtures/testfile.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/extra/helpers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/extra/hooks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/extra/world.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/glacier/glacier.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/glacier/step_definitions/glacier.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/iam/iam.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/iam/step_definitions/iam.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/importexport/importexport.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/importexport/step_definitions/importexport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/kinesis/kinesis.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/kinesis/step_definitions/kinesis.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/opsworks/opsworks.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/opsworks/step_definitions/opsworks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/rds/rds.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/rds/step_definitions/rds.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/redshift/redshift.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/redshift/step_definitions/redshift.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/route53/route53.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/route53/step_definitions/route53.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/s3/buckets.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/s3/objects.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/s3/step_definitions/buckets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/s3/step_definitions/hooks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/s3/step_definitions/objects.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/s3/step_definitions/proxy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/ses/ses.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/ses/step_definitions/ses.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/simpledb/simpledb.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/simpledb/step_definitions/simpledb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/sns/sns.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/sns/step_definitions/sns.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/sqs/messages.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/sqs/queues.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/sqs/step_definitions/messages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/sqs/step_definitions/queues.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/sqs/step_definitions/sqs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/storagegateway/step_definitions/storagegateway.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/storagegateway/storagegateway.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/sts/step_definitions/sts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/sts/sts.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/support/step_definitions/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/support/support.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/swf/step_definitions/swf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/features/swf/swf.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/aws.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/credentials.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/credentials/credential_provider_chain.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/credentials/ec2_metadata_credentials.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/credentials/environment_credentials.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/credentials/file_system_credentials.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/credentials/saml_credentials.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/credentials/shared_ini_file_credentials.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/credentials/temporary_credentials.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/credentials/web_identity_credentials.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/event_listeners.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/http.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/http/node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/http/xhr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/json/builder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/json/parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/metadata_service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/model/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/model/collection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/model/operation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/model/paginator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/model/resource_waiter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/model/shape.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/param_validator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/protocol/json.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/protocol/query.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/protocol/rest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/protocol/rest_json.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/protocol/rest_xml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/query/query_param_serializer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/region_config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/region_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/request.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/resource_waiter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/response.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/sequential_executor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/services.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/services/cloudsearchdomain.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/services/dynamodb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/services/ec2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/services/elastictranscoder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/services/glacier.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/services/route53.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/services/s3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/services/sqs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/services/sts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/services/swf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/signers/presign.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/signers/request_signer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/signers/s3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/signers/v2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/signers/v3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/signers/v3https.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/signers/v4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/state_machine.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/xml/browser_parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/xml/builder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/lib/xml/node_parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/scripts/console" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/scripts/coverage" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/tasks/apis.rake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/tasks/browser.rake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/tasks/docs.rake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/tasks/lib/cucumber_generator.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/tasks/util.rake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/js/jasmine-1.3.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/js/jasmine-html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/runner.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/runner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/appinfo.sample.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/console.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/css/smoothness/images/animated-overlay.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/css/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/css/smoothness/images/ui-bg_flat_75_ffffff_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/css/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/css/smoothness/images/ui-bg_glass_65_ffffff_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/css/smoothness/images/ui-bg_glass_75_dadada_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/css/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/css/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/css/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/css/smoothness/images/ui-icons_222222_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/css/smoothness/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/css/smoothness/images/ui-icons_454545_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/css/smoothness/images/ui-icons_888888_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/css/smoothness/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/css/smoothness/jquery-ui-1.10.1.custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/css/smoothness/jquery-ui-1.10.1.custom.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/js/jquery-1.9.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/js/jquery-ui-1.10.1.custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/js/jquery-ui-1.10.1.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/browser/sample/s3upload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/config.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/credential_provider_chain.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/credentials.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/endpoint.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/event_listeners.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/helpers.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/http_request.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/json/builder.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/json/parser.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/metadata_service.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/model/api.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/model/shape.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/node_http_client.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/param_validator.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/protocol/json.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/protocol/query.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/protocol/rest.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/protocol/rest_json.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/protocol/rest_xml.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/query/query_param_serializer.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/region_config.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/request.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/resource_waiter.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/response.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/sequential_executor.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/service.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/services/cloudfront.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/services/cloudsearchdomain.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/services/dynamodb.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/services/ec2.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/services/elastictranscoder.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/services/glacier.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/services/rds.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/services/route53.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/services/s3.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/services/simpledb.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/services/sqs.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/services/sts.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/services/swf.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/signers/presign.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/signers/s3.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/signers/v2.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/signers/v4.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/util.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/xml/builder.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/test/xml/parser.spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aws-sdk/testem.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/directmail/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/directmail/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/directmail/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/directmail/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/directmail/lib/mailer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/directmail/lib/queue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/directmail/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dkim-signer/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dkim-signer/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dkim-signer/lib/dkim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dkim-signer/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/lib/encoding.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/lib/iconv-loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/Changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/encodings/dbcs-codec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/encodings/dbcs-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/encodings/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/encodings/internal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/encodings/sbcs-codec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/encodings/sbcs-data-generated.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/encodings/sbcs-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/encodings/tables/big5-added.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/encodings/tables/cp936.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/encodings/tables/cp949.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/encodings/tables/cp950.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/encodings/tables/eucjp.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/encodings/tables/gbk-added.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/encodings/tables/shiftjis.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/encodings/utf16.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/encodings/utf7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/lib/bom-handling.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/lib/extend-node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/lib/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/lib/streams.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/node_modules/iconv-lite/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/test/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/follow-redirects/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/follow-redirects/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/follow-redirects/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/follow-redirects/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/follow-redirects/test/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/he/LICENSE-MIT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/he/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/he/bin/he" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/he/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/he/man/he.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/he/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mailcomposer/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mailcomposer/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mailcomposer/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mailcomposer/lib/mailcomposer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mailcomposer/lib/topunycode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mailcomposer/lib/urlfetch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mailcomposer/node_modules/mime/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mailcomposer/node_modules/mime/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mailcomposer/node_modules/mime/mime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mailcomposer/node_modules/mime/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mailcomposer/node_modules/mime/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mailcomposer/node_modules/mime/types/mime.types" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mailcomposer/node_modules/mime/types/node.types" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mailcomposer/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mimelib/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mimelib/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mimelib/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mimelib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mimelib/lib/content-types-reversed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mimelib/lib/content-types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mimelib/lib/mimelib.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mimelib/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/.npmignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nodemailer/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/CONTRIBUTING.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nodemailer/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nodemailer/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/addressparser/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/base64/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/dkim/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/dkim/message-parser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/dkim/relaxed-body.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/dkim/sign.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/fetch/cookies.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/fetch/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/json-transport/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/mail-composer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/mailer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/mailer/mail-message.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/mime-funcs/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/mime-funcs/mime-types.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/mime-node/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/mime-node/last-newline.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/engines/direct.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/engines/pickup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/engines/sendmail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/engines/ses.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/engines/smtp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/engines/stub.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/helpers.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/nodemailer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nodemailer/lib/nodemailer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/qp/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/sendmail-transport/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/sendmail-transport/le-unix.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/sendmail-transport/le-windows.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/ses-transport/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/shared/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/smtp-connection/data-stream.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/smtp-connection/http-proxy-client.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/smtp-connection/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/smtp-pool/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/smtp-pool/pool-resource.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/smtp-transport/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/stream-transport/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/well-known/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/well-known/services.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/xoauth2/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/transport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/wellknown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/lib/xoauth.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/nodemailer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nodemailer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/public-address/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/public-address/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/public-address/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/public-address/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/punycode/LICENSE-GPL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/punycode/LICENSE-MIT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/punycode/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/punycode/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/punycode/punycode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/punycode/punycode.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rai/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rai/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rai/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rai/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rai/cert/server.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rai/cert/server.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rai/lib/mockup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rai/lib/rai.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rai/lib/starttls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rai/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/safer-buffer/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/safer-buffer/Porting-Buffer.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/safer-buffer/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/safer-buffer/dangerous.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/safer-buffer/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/safer-buffer/safer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/safer-buffer/tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/examples/big-not-pretty.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/examples/example.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/examples/get-products.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/examples/hello-world.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/examples/not-pretty.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/examples/pretty-print.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/examples/shopping.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/examples/strict.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/examples/switch-bench.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/examples/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/examples/test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/lib/sax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/buffer-overrun.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/case.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/cdata-chunked.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/cdata-end-split.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/cdata-fake-end.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/cdata-multiple.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/cdata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/issue-23.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/issue-30.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/issue-35.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/issue-47.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/issue-49.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/parser-position.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/self-closing-child-strict.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/self-closing-child.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/self-closing-tag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/stray-ending.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/trailing-non-whitespace.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/unquoted.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/xmlns-issue-41.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/xmlns-rebinding.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/xmlns-strict.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/xmlns-unbound.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/xmlns-xml-default-ns.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/xmlns-xml-default-prefix-attribute.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/xmlns-xml-default-prefix.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/test/xmlns-xml-default-redefine.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/simplesmtp/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/simplesmtp/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/simplesmtp/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/simplesmtp/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/simplesmtp/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/simplesmtp/lib/client.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/simplesmtp/lib/pool.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/simplesmtp/lib/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/simplesmtp/lib/simpleserver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/simplesmtp/node_modules/xoauth2/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/simplesmtp/node_modules/xoauth2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/simplesmtp/node_modules/xoauth2/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/simplesmtp/node_modules/xoauth2/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/simplesmtp/node_modules/xoauth2/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/simplesmtp/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/underscore/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/underscore/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/underscore/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/underscore/underscore-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/underscore/underscore-min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/underscore/underscore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/xml2js/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/xml2js/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/xml2js/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/xml2js/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/xml2js/lib/xml2js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/xml2js/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLBuilder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLFragment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/package.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -59,14 +624,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="94" column="34" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
-              <folding>
-                <element signature="e#210#259#0" />
-                <element signature="e#535#576#0" />
-                <element signature="e#659#686#0" />
-                <element signature="e#1000#1027#0" />
-              </folding>
+            <state relative-caret-position="128">
+              <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -74,13 +633,19 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            <state relative-caret-position="119">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>email</find>
+      <find>yahoo</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -165,12 +730,12 @@
       <updated>1524132301446</updated>
       <workItem from="1524132309739" duration="10075000" />
       <workItem from="1524160738294" duration="10390000" />
-      <workItem from="1524205791835" duration="6511000" />
+      <workItem from="1524205791835" duration="13640000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26976000" />
+    <option name="totallyTimeSpent" value="34105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -205,12 +770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-          <folding>
-            <element signature="e#210#259#0" />
-            <element signature="e#535#576#0" />
-            <element signature="e#659#686#0" />
-            <element signature="e#1000#1027#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -230,21 +789,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        <state relative-caret-position="119">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="94" column="34" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
-          <folding>
-            <element signature="e#210#259#0" />
-            <element signature="e#535#576#0" />
-            <element signature="e#659#686#0" />
-            <element signature="e#1000#1027#0" />
-          </folding>
+        <state relative-caret-position="128">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
         </state>
       </provider>
     </entry>

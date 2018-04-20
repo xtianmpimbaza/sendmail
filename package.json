@@ -6,7 +6,7 @@
   "dependencies": {
     "cors": "^2.8.4",
     "express": "3.x",
-    "nodemailer": "^0.7.1",
+    "nodemailer": "^4.6.4",
     "sendmail": "^1.4.1",
     "xoauth2": "^1.2.0"
   },
