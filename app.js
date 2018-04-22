@@ -37,7 +37,7 @@ app.post('/sendmail', function (req, res) {
         to: req.body.email_to,
         subject: 'African blockchain conference',
         text: req.body.no_html,
-        html: "<b>"+req.body.no_html+"</b>"
+        html: "<p>"+req.body.no_html+"</p>"
     };
 
     transporter.sendMail(mailOptions, function (error, info) {
