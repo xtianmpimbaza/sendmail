@@ -8,6 +8,7 @@
     "express": "3.x",
     "node-fetch": "^2.1.2",
     "nodemailer": "^4.6.4",
+    "request": "^2.85.0",
     "sendmail": "^1.4.1",
     "xoauth2": "^1.2.0"
   },
