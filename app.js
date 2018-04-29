@@ -3,11 +3,9 @@ var app = express();
 var cors = require('cors')
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
-// var xoauth2 = require('xoauth2');
-// var mail = require("nodemailer").mail;
+var request = require("request")
 
-
-
+// import fetch from 'node-fetch';
 app.use(bodyParser.json());
 
 app.use(cors())
@@ -27,6 +25,48 @@ var transporter = nodemailer.createTransport({
 app.get('/', function (req, res) {
     res.send('Wrong location');
 });
+// app.get('/speakers', function (req, res) {
+//     fetch('https://github.com/')
+//         .then(res => res.text())
+//         .then(body => {
+//             res.send(body);
+//         });
+//
+// });
+
+//------------------------------------------rest api to get schedules
+app.get('/getspeakers', function (req, res) {
+
+    var speaker = [];
+
+
+    // var url = 'https://africanblockchain.org//wp-json/wp/v2/speaker/?_embed&&status=publish';
+    var url = 'https://africanblockchain.org//wp-json/wp/v2/speaker/?_embed&&status=publish&per_page=100&page=1';
+    request({
+        url: url,
+        json: true
+    }, function (error, response, body) {
+
+        if (!error && response.statusCode === 200) {
+            body.forEach(function (item) {
+                // speaker.push({name:item.title.rendered, type : item.type, company : item.acf.company, picture:item.source_url});
+                speaker.push({
+                    name: item.title.rendered,
+                    company: item.acf.company,
+                    title: item.acf.role,
+                    country: item.acf.country,
+                    // picture: item._embedded.wp:featuredmedia
+                    picture: item._embedded["wp:featuredmedia"][0].source_url
+            });
+            });
+
+            res.send(speaker);
+            // res.send(body);
+            // console.log(body) // Print the json response
+        }
+    })
+});
+
 
 app.post('/sendmail', function (req, res) {
 
@@ -37,7 +77,7 @@ app.post('/sendmail', function (req, res) {
         to: req.body.email_to,
         subject: 'African blockchain conference',
         text: req.body.no_html,
-        html: "<p>"+req.body.no_html+"</p>"
+        html: "<p>" + req.body.no_html + "</p>"
     };
 
     transporter.sendMail(mailOptions, function (error, info) {
@@ -52,8 +92,9 @@ app.post('/sendmail', function (req, res) {
 
 });
 
+
 // Listen
 var port = process.env.PORT || 4000;
-app.listen(port, function(){
+app.listen(port, function () {
     console.log('listening on', port);
 })
