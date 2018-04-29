@@ -41,7 +41,7 @@ app.get('/getspeakers', function (req, res) {
 
 
     // var url = 'https://africanblockchain.org//wp-json/wp/v2/speaker/?_embed&&status=publish';
-    var url = 'https://africanblockchain.org//wp-json/wp/v2/speaker/?_embed&&status=publish&per_page=100&page=1';
+    var url = 'https://africanblockchain.org//wp-json/wp/v2/speaker/?_embed&&status=publish&per_page=60&page=1';
     request({
         url: url,
         json: true

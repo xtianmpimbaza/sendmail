@@ -4,7 +4,6 @@
     <list default="true" id="c6f98f87-f5e9-4aa9-bdd7-e92c643befef" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,7 +21,7 @@
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="43" column="103" selection-start-line="43" selection-start-column="103" selection-end-line="43" selection-end-column="103" />
+              <caret line="43" column="102" selection-start-line="43" selection-start-column="102" selection-end-line="43" selection-end-column="102" />
             </state>
           </provider>
         </entry>
@@ -152,12 +151,12 @@
       <workItem from="1524831984757" duration="158000" />
       <workItem from="1524995722143" duration="7207000" />
       <workItem from="1525012640729" duration="2171000" />
-      <workItem from="1525029257526" duration="2000000" />
+      <workItem from="1525029257526" duration="3064000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51815000" />
+    <option name="totallyTimeSpent" value="52879000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -350,7 +349,7 @@
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="43" column="103" selection-start-line="43" selection-start-column="103" selection-end-line="43" selection-end-column="103" />
+          <caret line="43" column="102" selection-start-line="43" selection-start-column="102" selection-end-line="43" selection-end-column="102" />
         </state>
       </provider>
     </entry>
