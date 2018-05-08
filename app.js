@@ -14,7 +14,7 @@ var transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
         user: 'xtianm4@gmail.com',
-        pass: '1992mcdigital'
+        pass: ''
     },
     tls: {
         rejectUnauthorized: false
@@ -39,7 +39,6 @@ app.get('/getspeakers', function (req, res) {
 
     var speaker = [];
 
-
     // var url = 'https://africanblockchain.org//wp-json/wp/v2/speaker/?_embed&&status=publish';
     var url = 'https://africanblockchain.org//wp-json/wp/v2/speaker/?_embed&&status=publish&per_page=60&page=1';
     request({
@@ -51,6 +50,7 @@ app.get('/getspeakers', function (req, res) {
             body.forEach(function (item) {
                 // speaker.push({name:item.title.rendered, type : item.type, company : item.acf.company, picture:item.source_url});
                 speaker.push({
+                    id: item.id,
                     name: item.title.rendered,
                     company: item.acf.company,
                     title: item.acf.role,
@@ -67,6 +67,45 @@ app.get('/getspeakers', function (req, res) {
     })
 });
 
+//------------------------------------------rest api to get exhibitors
+app.get('/getexhibitors', function (req, res) {
+
+    // var exhibitors = [];
+
+    var url = 'https://africanblockchain.org//wp-json/wp/v2/exhibitor/';
+    request({
+        url: url,
+        json: true
+    }, function (error, response, body) {
+
+        if (!error && response.statusCode === 200) {
+            res.send(body);
+        }
+    })
+});
+
+//------------------------------------------rest api to get sponsors
+app.get('/getsponsors', function (req, res) {
+
+    var sponsor = [];
+    var url = 'https://africanblockchain.org//wp-json/wp/v2/sponsor/?_embed&&status=publish&per_page=60&page=1';
+    request({
+        url: url,
+        json: true
+    }, function (error, response, body) {
+        if (!error && response.statusCode === 200) {
+            body.forEach(function (item) {
+                sponsor.push({
+                    id: item.id,
+                    name: item.title.rendered,
+                    // company: item.acf.company,
+                    picture: item._embedded["wp:featuredmedia"][0].source_url
+                });
+            });
+            res.send(sponsor);
+        }
+    })
+});
 
 app.post('/sendmail', function (req, res) {
 
@@ -91,7 +130,6 @@ app.post('/sendmail', function (req, res) {
     });
 
 });
-
 
 // Listen
 var port = process.env.PORT || 4000;
