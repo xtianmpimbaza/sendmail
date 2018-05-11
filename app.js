@@ -27,6 +27,59 @@ app.get('/', function (req, res) {
     res.send('Wrong location');
 });
 
+//------------------------------------------rest api to get delegates
+app.get('/getdelegates', function (req, res) {
+
+    var delegates = [];
+
+    var url = 'https://adin.ug/abc2018/api/christian.php?auth=246fb595064db95e76bbdd828cf7207662a6baaf&table=delegates';
+    request({
+        url: url,
+        json: true
+    }, function (error, response, body) {
+
+        if (!error && response.statusCode === 200) {
+            body.forEach(function (item) {
+
+                delegates.push({
+                    id: item.id,
+                    ticket: item.ticket,
+                    email: decodeURIComponent(item.email),
+                    first_name: item.first_name.replace(/\+/g, " "),
+                    last_name: item.last_name.replace(/\+/g, " "),
+                    company: item.company.replace(/\+/g, " "),
+                    position: item.position.replace(/\+/g, " ")
+                });
+            });
+
+            res.send(delegates);
+        }
+    })
+});
+
+
+//------------------------------------------ login
+app.post('/login', function (req, res) {
+
+    var valid = false;
+
+    var url = 'https://adin.ug/abc2018/api/christian.php?auth=246fb595064db95e76bbdd828cf7207662a6baaf&table=delegates';
+    request({
+        url: url,
+        json: true
+    }, function (error, response, body) {
+
+        if (!error && response.statusCode === 200) {
+            body.forEach(function (item) {
+                if (req.body.email.match(item.email) && req.body.ticket.match(item.ticket)) {
+                    valid = true;
+                }
+            });
+
+            res.send({feedback: valid});
+        }
+    })
+});
 
 //------------------------------------------rest api to get schedules
 app.get('/getspeakers', function (req, res) {
@@ -53,7 +106,7 @@ app.get('/getspeakers', function (req, res) {
                     picture: item._embedded["wp:featuredmedia"][0].source_url,
                     content: htmlToText.fromString(item.content.rendered).replace(/\n/g, " ")
                     // content: (item.content.rendered).replace('<>','')
-            });
+                });
             });
 
             res.send(speaker);
