@@ -6,6 +6,7 @@
   "dependencies": {
     "cors": "^2.8.4",
     "express": "3.x",
+    "html-to-text": "^4.0.0",
     "node-fetch": "^2.1.2",
     "nodemailer": "^4.6.4",
     "request": "^2.85.0",

@@ -4,6 +4,7 @@ var cors = require('cors')
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 var request = require("request")
+var htmlToText = require('html-to-text');
 
 // import fetch from 'node-fetch';
 app.use(bodyParser.json());
@@ -50,7 +51,8 @@ app.get('/getspeakers', function (req, res) {
                     country: item.acf.country,
                     // picture: item._embedded.wp:featuredmedia
                     picture: item._embedded["wp:featuredmedia"][0].source_url,
-                    content: item.content.rendered
+                    content: htmlToText.fromString(item.content.rendered).replace(/\n/g, " ")
+                    // content: (item.content.rendered).replace('<>','')
             });
             });
 
@@ -112,29 +114,33 @@ app.get('/getsponsors', function (req, res) {
     })
 });
 
-// app.get('/getschedule', function (req, res) {
-//
-//     var sponsor = [];
-//     var url = 'https://www.adin.ug/abc2018/api/test.php';
-//     request({
-//         url: url,
-//         json: true
-//     }, function (error, response, body) {
-//         if (!error && response.statusCode === 200) {
-//             // body.forEach(function (item) {
-//             //     sponsor.push({
-//             //         id: item.id,
-//             //         name: item.title.rendered,
-//             //         // company: item.acf.company,
-//             //         picture: item._embedded["wp:featuredmedia"][0].source_url
-//             //     });
-//             // });
-//             var s = JSON.parse(body);
-//             // var c = json(body);
-//             res.send(s);
-//         }
-//     })
-// });
+app.get('/getschedule', function (req, res) {
+
+    var sponsor = [];
+    // var url = 'https://adin.ug/abc2018/api/christian.php?auth=246fb595064db95e76bbdd828cf7207662a6baaf&table=program';
+    var url = encodeURI('https://adin.ug/abc2018/api/christian.php?auth=246fb595064db95e76bbdd828cf7207662a6baaf&table=program');
+    // decodeURI(encoded)
+    request({
+        url: url,
+        json: true
+    }, function (error, response, body) {
+        if (!error && response.statusCode === 200) {
+            body.forEach(function (item) {
+                sponsor.push({
+                    id: item.id,
+                    name: item.title.rendered,
+                    // company: item.acf.company,
+                    picture: item._embedded["wp:featuredmedia"][0].source_url
+                });
+            });
+
+            console.log(body);
+            // var s = JSON.parse(body);
+            // var c = json(body);
+            res.send(body);
+        }
+    })
+});
 
 
 app.post('/sendmail', function (req, res) {
