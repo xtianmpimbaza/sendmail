@@ -25,14 +25,7 @@ var transporter = nodemailer.createTransport({
 app.get('/', function (req, res) {
     res.send('Wrong location');
 });
-// app.get('/speakers', function (req, res) {
-//     fetch('https://github.com/')
-//         .then(res => res.text())
-//         .then(body => {
-//             res.send(body);
-//         });
-//
-// });
+
 
 //------------------------------------------rest api to get schedules
 app.get('/getspeakers', function (req, res) {
@@ -40,7 +33,7 @@ app.get('/getspeakers', function (req, res) {
     var speaker = [];
 
     // var url = 'https://africanblockchain.org//wp-json/wp/v2/speaker/?_embed&&status=publish';
-    var url = 'https://africanblockchain.org//wp-json/wp/v2/speaker/?_embed&&status=publish&per_page=60&page=1';
+    var url = 'https://africanblockchain.org//wp-json/wp/v2/speaker/?_embed&&status=publish&per_page=100&page=1';
     request({
         url: url,
         json: true
@@ -70,16 +63,27 @@ app.get('/getspeakers', function (req, res) {
 //------------------------------------------rest api to get exhibitors
 app.get('/getexhibitors', function (req, res) {
 
-    // var exhibitors = [];
+    var exhibitors = [];
 
-    var url = 'https://africanblockchain.org//wp-json/wp/v2/exhibitor/';
+    var url = 'https://africanblockchain.org//wp-json/wp/v2/exhibitor/?_embed&&status=publish&per_page=100&page=1';
     request({
         url: url,
         json: true
     }, function (error, response, body) {
 
         if (!error && response.statusCode === 200) {
-            res.send(body);
+            body.forEach(function (item) {
+                exhibitors.push({
+                    id: item.id,
+                    name: item.title.rendered,
+                    // company: item.acf.company,
+                    // title: item.acf.role,
+                    // country: item.acf.country,
+                    // picture: item._embedded.wp:featuredmedia
+                    picture: item._embedded["wp:featuredmedia"][0].source_url
+                });
+            });
+            res.send(exhibitors);
         }
     })
 });
@@ -88,7 +92,7 @@ app.get('/getexhibitors', function (req, res) {
 app.get('/getsponsors', function (req, res) {
 
     var sponsor = [];
-    var url = 'https://africanblockchain.org//wp-json/wp/v2/sponsor/?_embed&&status=publish&per_page=60&page=1';
+    var url = 'https://africanblockchain.org//wp-json/wp/v2/sponsor/?_embed&&status=publish&per_page=100&page=1';
     request({
         url: url,
         json: true
