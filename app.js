@@ -49,7 +49,8 @@ app.get('/getspeakers', function (req, res) {
                     title: item.acf.role,
                     country: item.acf.country,
                     // picture: item._embedded.wp:featuredmedia
-                    picture: item._embedded["wp:featuredmedia"][0].source_url
+                    picture: item._embedded["wp:featuredmedia"][0].source_url,
+                    content: item.content.rendered
             });
             });
 
@@ -110,6 +111,31 @@ app.get('/getsponsors', function (req, res) {
         }
     })
 });
+
+// app.get('/getschedule', function (req, res) {
+//
+//     var sponsor = [];
+//     var url = 'https://www.adin.ug/abc2018/api/test.php';
+//     request({
+//         url: url,
+//         json: true
+//     }, function (error, response, body) {
+//         if (!error && response.statusCode === 200) {
+//             // body.forEach(function (item) {
+//             //     sponsor.push({
+//             //         id: item.id,
+//             //         name: item.title.rendered,
+//             //         // company: item.acf.company,
+//             //         picture: item._embedded["wp:featuredmedia"][0].source_url
+//             //     });
+//             // });
+//             var s = JSON.parse(body);
+//             // var c = json(body);
+//             res.send(s);
+//         }
+//     })
+// });
+
 
 app.post('/sendmail', function (req, res) {
 
