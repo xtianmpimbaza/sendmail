@@ -72,8 +72,6 @@ app.get('/getprogram', function (req, res) {
 
                 program.push({
                     id: item.id,
-                    date: item.ticket,
-                    time: item.email,
                     activity: item.p_activity.replace(/\+/g, " "),
                     topic: item.p_topic.replace(/\+/g, " "),
                     venue: decodeURIComponent(item.p_venue).replace(/\+/g, " "),
@@ -82,6 +80,8 @@ app.get('/getprogram', function (req, res) {
                     type: item.p_type.replace(/\+/g, " "),
                     panelist: decodeURIComponent(item.p_panelist).replace(/\+|\r|\n/g, " ").replace("   "," "),
                     sponsor: item.p_sponsor.replace(/\+/g, " "),
+                    time: decodeURIComponent(item.p_time).replace(/\+/g, " "),
+                    date: decodeURIComponent(item.p_date).replace(/\+/g, " "),
                     website: decodeURIComponent(item.p_website).replace(/\+/g, " ")
                 });
             });
