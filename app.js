@@ -56,6 +56,40 @@ app.get('/getdelegates', function (req, res) {
         }
     })
 });
+//------------------------------------------rest api to get delegates
+app.get('/getprogram', function (req, res) {
+
+    var program = [];
+
+    var url = 'https://www.adin.ug/abc2018/api/christian.php?auth=246fb595064db95e76bbdd828cf7207662a6baaf&table=program';
+    request({
+        url: url,
+        json: true
+    }, function (error, response, body) {
+
+        if (!error && response.statusCode === 200) {
+            body.forEach(function (item) {
+
+                program.push({
+                    id: item.id,
+                    date: item.ticket,
+                    time: item.email,
+                    activity: item.p_activity.replace(/\+/g, " "),
+                    topic: item.p_topic.replace(/\+/g, " "),
+                    venue: decodeURIComponent(item.p_venue).replace(/\+/g, " "),
+                    description: item.p_description.replace(/\+/g, " "),
+                    speaker: decodeURIComponent(item.p_speaker).replace(/\+/g, " "),
+                    type: item.p_type.replace(/\+/g, " "),
+                    panelist: decodeURIComponent(item.p_panelist).replace(/\+|\r|\n/g, " ").replace("   "," "),
+                    sponsor: item.p_sponsor.replace(/\+/g, " "),
+                    website: decodeURIComponent(item.p_website).replace(/\+/g, " ")
+                });
+            });
+
+            res.send(program);
+        }
+    })
+});
 
 
 //------------------------------------------ login
