@@ -72,7 +72,7 @@ app.get('/getprogram', function (req, res) {
 
                 program.push({
                     id: item.id,
-                    activity: item.p_activity.replace(/\+/g, " "),
+                    activity: decodeURIComponent(item.p_activity).replace(/\+/g, " "),
                     topic: item.p_topic.replace(/\+/g, " "),
                     venue: decodeURIComponent(item.p_venue).replace(/\+/g, " "),
                     description: item.p_description.replace(/\+/g, " "),
@@ -87,6 +87,8 @@ app.get('/getprogram', function (req, res) {
             });
 
             res.send(program);
+        }else {
+            console.log(error);
         }
     })
 });
@@ -143,7 +145,7 @@ app.get('/getspeakers', function (req, res) {
                 });
             });
 
-            res.send(speaker);
+            res.send(speaker.reverse());
             // res.send(body);
             // console.log(body) // Print the json response
         }
