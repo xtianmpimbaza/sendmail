@@ -198,7 +198,7 @@ app.get('/getsponsors', function (req, res) {
                     picture: item._embedded["wp:featuredmedia"][0].source_url
                 });
             });
-            res.send(sponsor);
+            res.send(sponsor.reverse());
         }
     })
 });
