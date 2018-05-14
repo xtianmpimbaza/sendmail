@@ -198,6 +198,10 @@ app.get('/getsponsors', function (req, res) {
                     picture: item._embedded["wp:featuredmedia"][0].source_url
                 });
             });
+            var binance = {id:'01', name: 'Binance', picture: 'https://africanblockchain.org/wp-content/uploads/2018/04/binance-logo.jpg'};
+            var mini_finance = {id:'02', name: 'Ministry of ICT and National Guidance', picture: 'https://africanblockchain.org/wp-content/uploads/2018/04/mo-ict-sponsor.jpg'};
+            sponsor.push(mini_finance);
+            sponsor.push(binance);
             res.send(sponsor.reverse());
         }
     })
