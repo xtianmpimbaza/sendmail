@@ -69,20 +69,27 @@ app.get('/getprogram', function (req, res) {
 
         if (!error && response.statusCode === 200) {
             body.forEach(function (item) {
-
+                // var activity;
+                // try {
+                //     activity = decodeURIComponent(item.p_activity).replace(/\+/g, " ");
+                // }
+                // catch(err) {
+                //     activity = item.p_activity.replace(/[^A-Za-z]+/g, " ");
+                // }
                 program.push({
+
                     id: item.id,
-                    activity: decodeURIComponent(item.p_activity).replace(/\+/g, " "),
-                    topic: item.p_topic.replace(/\+/g, " "),
-                    venue: decodeURIComponent(item.p_venue).replace(/\+/g, " "),
-                    description: item.p_description.replace(/\+/g, " "),
-                    speaker: decodeURIComponent(item.p_speaker).replace(/\+/g, " "),
+                    activity: item.p_activity.replace(/[^A-Za-z]+/g, " "),
+                    venue: item.p_venue.replace(/[^A-Za-z]+/g, " "),
+                    description: item.p_description.replace(/[^A-Za-z]+/g, " "),
+                    speaker: item.p_speaker.replace(/[^A-Za-z]+/g, " "),
                     type: item.p_type.replace(/\+/g, " "),
-                    panelist: decodeURIComponent(item.p_panelist).replace(/\+|\r|\n/g, " ").replace("   "," "),
+                    panelist: item.p_panelist.replace(/[^A-Za-z]+/g, " "),
                     sponsor: item.p_sponsor.replace(/\+/g, " "),
                     time: decodeURIComponent(item.p_time).replace(/\+/g, " "),
                     date: decodeURIComponent(item.p_date).replace(/\+/g, " "),
                     website: decodeURIComponent(item.p_website).replace(/\+/g, " ")
+
                 });
             });
 
